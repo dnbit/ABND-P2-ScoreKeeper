@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.dnbitstudio.scorekeeper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:layout_marginBottom="@dimen/scores_margin_bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/separation_standard">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/team_home"
+                    android:textSize="@dimen/text_size_header" />
+
+                <TextView
+                    android:id="@+id/score_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_score"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <Button
+                    android:id="@+id/goal_button_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goal"
+                    style="@style/Widget.AppCompat.Button.Colored" />
+
+                <TextView
+                    android:id="@+id/yellow_card_home"
+                    android:layout_width="48dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/yellow_card_state"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/separation_standard"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/red_card_home"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:background="@drawable/red_card_state"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/separation_standard"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/separation_standard">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/team_visitor"
+                    android:textSize="@dimen/text_size_header" />
+
+                <TextView
+                    android:id="@+id/score_visitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_score"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <Button
+                    android:id="@+id/goal_button_visitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goal"
+                    style="@style/Widget.AppCompat.Button.Colored" />
+
+                <TextView
+                    android:id="@+id/yellow_card_visitor"
+                    android:layout_width="48dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/yellow_card_state"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/separation_standard"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/red_card_visitor"
+                    android:layout_width="@dimen/card_width"
+                    android:layout_height="@dimen/card_height"
+                    android:background="@drawable/red_card_state"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/separation_standard"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold"
+                    tools:text="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/separation_standard"
+            android:layout_marginTop="@dimen/separation_standard"
+            android:text="@string/reset"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </RelativeLayout>
+</ScrollView>
